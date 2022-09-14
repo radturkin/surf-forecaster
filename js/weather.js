@@ -40,3 +40,80 @@ function forecaster(){
     });
 
 }
+// get a new date (locale machine date time)
+var date = new Date();
+console.log(date)
+// get the date as a string
+var n = date.toDateString();
+// get the time as a string
+
+var hour=date.getHours()
+console.log(hour)
+var time = date.toLocaleTimeString();
+let year=date.getFullYear()
+let month=String(date.getMonth()+1)
+console.log(`month ${month}`)
+let day = String(date.getDate())
+let minute = date.getMinutes()
+console.log(year,month,day)
+
+let minutes=minute.toNumber
+console.log(typeof minute)
+let newtime= "0638"
+let flexhour=hour-1
+let pastminutes=minute-30
+console.log(`pastminutes ${pastminutes}`)
+let newminutes=pastminutes
+
+let newhour=hour
+
+
+function converttoTwoDigits(n){
+    return n > 9 ? "" + n: "0" + n;
+}
+day=converttoTwoDigits(day)
+month=converttoTwoDigits(month)
+
+if (pastminutes<0){
+    newminutes=60+pastminutes
+    newhour=flexhour
+}
+//create switch case
+if(newminutes>58){
+    newminutes=58
+    }
+
+else if (newminutes<58 && newminutes > 43){
+    newminutes=43
+}
+
+else if(newminutes<43 && newminutes>28){
+    newminutes=28
+}
+else if(newminutes<28 && newminutes >13){
+    newminutes=13
+}
+
+else if(newminutes<13 && newminutes>0){
+    newminutes=58
+    newhour=flexhour
+}
+newtime=`${newhour}${newminutes}`
+console.log(newtime)
+    
+
+
+
+// log the date in the browser console
+console.log('date:', n);
+// log the time in the browser console
+console.log('time:',time);
+
+//select correctimage src="https://cameras-cam.cdn.weatherbug.net/NUEIL/2022/09/14/091420221038_l.jpg"
+
+//to find correct time 58, 43,28, 13, 
+
+let link = 
+document.getElementById('image').src =`https://cameras-cam.cdn.weatherbug.net/NUEIL/${year}/${month}/${day}/${month}${day}${year}${newtime}_l.jpg`
+
+console.log(link)
