@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(27, 27, 146);
+}
+
+#images {
+    width:30%;
+    height:auto;
+    float: left;
+}
