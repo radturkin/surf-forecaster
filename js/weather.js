@@ -16,14 +16,14 @@ function forecaster(){
 
    let table=document.getElementById("tables")
 
-   for(let i=0;i<30;i++){
+   for(let i=0;i<120;i++){
     let day=String(period[i].startTime)
     //2022-09-14T07:00:00-05:00 parse date time to date time seperate
     let newday=day.split("T")
     let daysub=newday[0].substring(5,)
     let timesub=newday[1].substring(0,2)
-
-    let row=`<tr>
+    //fill table with data from api
+    let row=`<tr class="oddeven">
                 <td>${daysub}</td>
                 <td>${timesub}</td>
                 <td>${period[i].temperature}</td>
@@ -69,6 +69,8 @@ function converttoTwoDigits(n){
 day=converttoTwoDigits(day)
 month=converttoTwoDigits(month)
 
+//create switch case
+
 if (pastminutes<0){
     newminutes=60+pastminutes
     newhour=flexhour
@@ -104,3 +106,14 @@ newtime=`${newhour}${newminutes}`
 
 document.getElementById('gwoods').src =`https://cameras-cam.cdn.weatherbug.net/NUEIL/${year}/${month}/${day}/${month}${day}${year}${newtime}_l.jpg`
 
+
+//click count for wave forecast images
+
+clickCount=1
+
+
+// create forward and backward button
+//document.querySelector('button').onclick('click', forecaster)
+
+
+document.getElementById('wavefc').src =`https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-${clickCount}.png?1663254398596` 

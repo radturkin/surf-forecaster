@@ -1,4 +1,5 @@
 body {
+    color: rgb(239, 231, 231);
     background-color: rgb(27, 27, 146);
 }
 
@@ -7,3 +8,30 @@ body {
     height:auto;
     float: left;
 }
+
+table, tbody{
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 1em;
+    min-width:400px; 
+    text-align:left;
+    padding: 25px;    
+    border-bottom: 1px solid black;
+    width: 30%;
+
+}
+
+#oddeven :nth-of-type(odd){
+    background-color: black;
+}
+
+button {
+    background-color: black;
+    color:white;
+}
+
+div {
+    width: 40%;
+    float: left;
+}
+
