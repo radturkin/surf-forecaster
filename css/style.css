@@ -7,7 +7,9 @@ body {
     width:30%;
     height:auto;
     float: left;
+    background-image:url('/images/vcrcalifornianocontest.jpg');
 }
+
 
 table, tbody{
     border-collapse: collapse;
