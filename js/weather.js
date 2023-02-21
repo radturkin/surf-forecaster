@@ -116,4 +116,14 @@ clickCount=1
 //document.querySelector('button').onclick('click', forecaster)
 
 
-document.getElementById('wavefc').src =`https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-${clickCount}.png?1663254398596` 
+document.getElementById('wavefc').src =`https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-${clickCount}.png?1663254398596`
+
+//create refresh button that refreshes whole page
+
+//learn about sign ins
+
+//comment sections
+
+//alerts
+
+//photo uploads
