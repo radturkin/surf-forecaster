@@ -41,6 +41,7 @@ function forecaster(){
 
 }
 // get a new date (locale machine date time)
+//this is all for the northwestern cam, it is down, have a default image for when it is down (vcr california), so time is not wasted loading a bad link
 var date = new Date();
 console.log(date)
 // get the date as a string
@@ -116,14 +117,4 @@ clickCount=1
 //document.querySelector('button').onclick('click', forecaster)
 
 
-document.getElementById('wavefc').src =`https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-${clickCount}.png?1663254398596`
-
-//create refresh button that refreshes whole page
-
-//learn about sign ins
-
-//comment sections
-
-//alerts
-
-//photo uploads
+document.getElementById('wavefc').src =`https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-${clickCount}.png?1663254398596` 
