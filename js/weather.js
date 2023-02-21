@@ -41,6 +41,7 @@ function forecaster(){
 
 }
 // get a new date (locale machine date time)
+//this is all for the northwestern cam, it is down, have a default image for when it is down (vcr california), so time is not wasted loading a bad link
 var date = new Date();
 console.log(date)
 // get the date as a string
