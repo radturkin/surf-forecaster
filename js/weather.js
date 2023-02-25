@@ -112,6 +112,19 @@ document.getElementById('gwoods').src =`https://cameras-cam.cdn.weatherbug.net/N
 
 clickCount=1
 
+function forward(){
+    clickCount+=1
+    document.getElementById('wavefc').src =`https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-${clickCount}.png?1663254398596` 
+
+    return clickCount
+}
+
+function backward(){
+    clickCount-=1
+    document.getElementById('wavefc').src =`https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-${clickCount}.png?1663254398596` 
+
+    return clickCount
+}
 
 // create forward and backward button
 //document.querySelector('button').onclick('click', forecaster)
