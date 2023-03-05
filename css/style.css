@@ -1,39 +1,46 @@
 body {
     color: rgb(239, 231, 231);
-    background-color: rgb(27, 27, 146);
+    background-color: rgb(27, 51, 146);
+    font-family: Helvetica, Arial, sans-serif;;
 }
 
-#images {
-    width:30%;
-    height:auto;
-    float: left;
+img {
+    margin: 10px 0; 
     background-image:url('/images/vcrcalifornianocontest.jpg');
 }
 
-
-table, tbody{
+table, tbody {
     border-collapse: collapse;
-    margin: 25px;
+    margin: 10px;
     font-size: 1em;
     min-width:400px; 
-    text-align:left;
-    padding: 25px;    
     border-bottom: 1px solid black;
-    width: 30%;
-
 }
 
-#oddeven :nth-of-type(odd){
+.oddeven :nth-of-type(odd){
     background-color: black;
 }
 
 button {
+    border: none;
+    cursor: pointer;
     background-color: black;
     color:white;
+    font-size:16px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
 }
 
-div {
-    width: 40%;
-    float: left;
+button:hover {
+    background: #212121;
+    color: #ffffff;
 }
 
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    text-align: left;
+}

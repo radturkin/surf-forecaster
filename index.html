@@ -2,35 +2,36 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-
+    	<meta name="description" content="Surf forecaster for Lake Michigan">
 		<title>Surf Forecaster</title>
-
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-
-		<h1>forecast</h1>
-		<div>
-		<button>get air and wind forecast</button>
-		<table id="tables">
-			<tr>
-				<th>date</th>
-				<th>hour</th>
-				<th>air temp(f)</th>
-				<th>wind speed</th>
-				<th>wind direction</th>
-			</tr>
-			<tbody>
-
-			</tbody>
-		</table>
+		<h1>Surf Forecaster for Lake Michigan</h1>
+		<div class="row">
+			<div class="column">
+				<button>get air and wind forecast</button>
+				<table id="forecast">
+					<tr>
+						<th>date</th>
+						<th>hour</th>
+						<th>air temp(f)</th>
+						<th>wind speed</th>
+						<th>wind direction</th>
+					</tr>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+			<div class="column">
+				<img src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" height="530" width="690" alt="">
+				<img src="images/vcrcalifornianocontest.jpg" height="400">
+				<p>Evanston Live Stream:</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
+				title="YouTube video player" 
+				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				allowfullscreen></iframe>
+			</div>
 		</div>
 		<div id= "glcfs" class="images">
 			<button onclick="backward()" type="button">Back</button>
