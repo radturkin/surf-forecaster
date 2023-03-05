@@ -1,7 +1,11 @@
 body {
-    color: rgb(239, 231, 231);
-    background-color: rgb(27, 51, 146);
+    background-color: #3C99DC;
+    color: #0F5298;
     font-family: Helvetica, Arial, sans-serif;;
+}
+
+h1, h2 {
+    color: #fff;
 }
 
 img {
@@ -9,21 +13,46 @@ img {
 }
 
 table, tbody {
+    color: #0F5298;
     border-collapse: collapse;
-    margin: 10px;
-    font-size: 1em;
-    min-width:400px; 
-    border-bottom: 1px solid black;
+    margin: 10px 0;
+    border: 1px solid black;
+    text-align: center;
+	vertical-align: middle;
 }
 
-.oddeven :nth-of-type(odd){
-    background-color: black;
+th, td {
+    padding: 8px;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+thead {
+    background-color: #006bbb;
+    color: white;
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+tbody tr:nth-of-type(even){
+    background-color: #66D3FA;
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: #D5F3FE;
 }
 
 button {
     border: none;
     cursor: pointer;
-    background-color: black;
+    background-color: #0F5298;
     color:white;
     font-size:16px;
     padding: 0.5em 1em;
@@ -31,7 +60,7 @@ button {
 }
 
 button:hover {
-    background: #212121;
+    background: darkblue;
     color: #ffffff;
 }
 

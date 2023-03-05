@@ -1,6 +1,4 @@
 
-document.querySelector('button').addEventListener('click', forecaster)
-
 function forecaster(){
     let period =""
 
@@ -14,23 +12,23 @@ function forecaster(){
       console.log(period[0].startTime)
 
 
-   let table=document.getElementById("forecast")
+   let tbody=document.getElementById("forecast")
 
-   for(let i=0;i<120;i++){
+   for (let i=0; i < 120; i++) {
         let day=String(period[i].startTime)
         //2022-09-14T07:00:00-05:00 parse date time to date time seperate
         let newday=day.split("T")
         let daysub=newday[0].substring(5,)
         let timesub=newday[1].substring(0,2)
         //fill table with data from api
-        let row=`<tr class="oddeven">
+        let row=`<tr>
                     <td>${daysub}</td>
                     <td>${timesub}</td>
                     <td>${period[i].temperature}</td>
                     <td>${period[i].windSpeed}</td>
                     <td>${period[i].windDirection}</td>
                 </tr>`
-        table.innerHTML+=row
+        tbody.innerHTML+=row
     }
 
     })
@@ -39,6 +37,9 @@ function forecaster(){
     });
 
 }
+
+forecaster()
+
 // get a new date (locale machine date time)
 //this is all for the northwestern cam, it is down, have a default image for when it is down (vcr california), so time is not wasted loading a bad link
 var date = new Date();

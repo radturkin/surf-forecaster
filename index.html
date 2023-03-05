@@ -10,33 +10,34 @@
 		<h1>Surf Forecaster for Lake Michigan</h1>
 		<div class="row">
 			<div class="column">
-				<button>get air and wind forecast</button>
-				<table id="forecast">
-					<tr>
-						<th>date</th>
-						<th>hour</th>
-						<th>air temp(f)</th>
-						<th>wind speed</th>
-						<th>wind direction</th>
-					</tr>
-					<tbody>
-					</tbody>
+				<table>
+					<caption>Air and Wind Forecast</caption>
+					<thead>
+						<tr>
+							<th>date</th>
+							<th>hour</th>
+							<th>air temp(f)</th>
+							<th>wind speed</th>
+							<th>wind direction</th>
+						</tr>
+					</thead>
+					<tbody id="forecast"></tbody>
 				</table>
 			</div>
 			<div class="column">
-				<p><b>NCEP WaveWatch III - Lake Michigan:</b></p>
-				<p><em>(<a href="https://www.glerl.noaa.gov/emf/waves/WW3/">Source</a>)</em></p>
-				<p><em>(Click "Back" / "Forward" to advance the frames.)</em></p>
+				<h2>NCEP WaveWatch III - Lake Michigan:</h2>
+				<p><a href="https://www.glerl.noaa.gov/emf/waves/WW3/">Source</a></p>
 				<button onclick="backward()" type="button">Back</button>
 				<button onclick="forward()" type="button">Forward</button>
+				<p><em>(Click "Back" / "Forward" to advance the frames.)</em></p>
 				<img id="wavefc" src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" height="530" width="690" alt="">
 
-				<p><b>Northwestern University - Evanston, Illinois:</b></p>
-				<p><em>(<a href="https://www.weatherbug.com/weather-camera/?cam=NUEIL">Source</a>)</em></p>
+				<h2>Northwestern University - Evanston, Illinois:</h2>
+				<p><a href="https://www.weatherbug.com/weather-camera/?cam=NUEIL">Source</a></p>
 				<img id="gwoods" src="images/vcrcalifornianocontest.jpg" height="400">
 
-				<p><b>Evanston Beach Live Stream:</b></p>
-				<p><em>(<a href="https://www.youtube.com/watch?v=_hXxjmIO3IY">Source</a>)</em></p>
+				<h2>Evanston Beach Live Stream:</h2>
+				<p><a href="https://www.youtube.com/watch?v=_hXxjmIO3IY">Source</a></p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
 				title="YouTube video player" 
 				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
