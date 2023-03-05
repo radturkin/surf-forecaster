@@ -104,8 +104,12 @@ newtime=`${newhour}${newminutes}`
 
 //to find correct time 58, 43,28, 13, 
 
-document.getElementById('gwoods').src =`https://cameras-cam.cdn.weatherbug.net/NUEIL/${year}/${month}/${day}/${month}${day}${year}${newtime}_l.jpg`
-
+gwoodsImg = document.getElementById('gwoods')
+gwoodsImg.src =`https://cameras-cam.cdn.weatherbug.net/NUEIL/${year}/${month}/${day}/${month}${day}${year}${newtime}_l.jpg`
+gwoodsImg.onerror = function() {
+    this.onerror = null;
+    this.src = "images/vcrcalifornianocontest.jpg"
+}
 
 //click count for wave forecast images
 

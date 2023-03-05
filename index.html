@@ -24,37 +24,26 @@
 				</table>
 			</div>
 			<div class="column">
-				<img src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" height="530" width="690" alt="">
-				<img src="images/vcrcalifornianocontest.jpg" height="400">
-				<p>Evanston Live Stream:</p>
+				<p><b>NCEP WaveWatch III - Lake Michigan:</b></p>
+				<p><em>(<a href="https://www.glerl.noaa.gov/emf/waves/WW3/">Source</a>)</em></p>
+				<p><em>(Click "Back" / "Forward" to advance the frames.)</em></p>
+				<button onclick="backward()" type="button">Back</button>
+				<button onclick="forward()" type="button">Forward</button>
+				<img id="wavefc" src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" height="530" width="690" alt="">
+
+				<p><b>Northwestern University - Evanston, Illinois:</b></p>
+				<p><em>(<a href="https://www.weatherbug.com/weather-camera/?cam=NUEIL">Source</a>)</em></p>
+				<img id="gwoods" src="images/vcrcalifornianocontest.jpg" height="400">
+
+				<p><b>Evanston Beach Live Stream:</b></p>
+				<p><em>(<a href="https://www.youtube.com/watch?v=_hXxjmIO3IY">Source</a>)</em></p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
 				title="YouTube video player" 
 				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 				allowfullscreen></iframe>
 			</div>
 		</div>
-		<div id= "glcfs" class="images">
-			<button onclick="backward()" type="button">Back</button>
-			<button onclick="forward()" type="button">Forward</button>
-
-			<img id="wavefc" name="animation" align="left" 
-			src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" 
-			height="530" width="690" alt="">
-		</div>
-		<div class="images">
-			<img id="gwoods" style="display: block;" 
-			src="/images/vcrcalifornianocontest.jpg"
-
-			width="981" height="551">
-		</div>
-		<div class="images">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
-			title="YouTube video player" 
-			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-			allowfullscreen></iframe>
-		</div>
 		
-
 		<script type="text/javascript" src="js/weather.js"></script>
 	</body>
 </html>
