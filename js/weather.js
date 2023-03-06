@@ -82,6 +82,7 @@ function forecastalt(){
 }
 
 forecaster()
+let clickCount=1
 
 // get a new date (locale machine date time)
 //this is all for the northwestern cam, it is down, have a default image for when it is down (vcr california), so time is not wasted loading a bad link
@@ -157,7 +158,7 @@ gwoodsImg.onerror = function() {
 
 //click count for wave forecast images
 
-let clickCount=1
+// let clickCount=1
 
 function forward(){
     clickCount+=1
