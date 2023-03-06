@@ -132,11 +132,11 @@ else if (newminutes<58 && newminutes > 43){
 else if(newminutes<43 && newminutes>28){
     newminutes=28
 }
-else if(newminutes<28 && newminutes >13){
-    newminutes=13
+else if(newminutes<28 && newminutes >14){
+    newminutes=14
 }
 
-else if(newminutes<13 && newminutes>0){
+else if(newminutes<14 && newminutes>0){
     newminutes=58
     newhour=flexhour
 }
