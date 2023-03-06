@@ -157,7 +157,7 @@ gwoodsImg.onerror = function() {
 
 //click count for wave forecast images
 
-clickCount=1
+let clickCount=1
 
 function forward(){
     clickCount+=1
