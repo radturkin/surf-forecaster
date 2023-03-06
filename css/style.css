@@ -1,39 +1,87 @@
 body {
-    color: rgb(239, 231, 231);
-    background-color: rgb(27, 27, 146);
+    background-color: #fff;
+    color: #03045E;
+    font-family: Helvetica, Arial, sans-serif;;
+    padding: 0;
+    margin: 0;
 }
 
-#images {
-    width:30%;
-    height:auto;
-    float: left;
-    background-image:url('/images/vcrcalifornianocontest.jpg');
+header {
+    color: #fff;
+    background-color: #2d55aa;
+    height: 70px;
+    padding: 20px;
 }
 
+img {
+    margin: 10px 10px 30px 0; 
+    border: 1px solid #555;
+}
 
-table, tbody{
+a {
+    color: #2d55aa;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+table, tbody {
+    color: #03045E;
     border-collapse: collapse;
-    margin: 25px;
-    font-size: 1em;
-    min-width:400px; 
-    text-align:left;
-    padding: 25px;    
-    border-bottom: 1px solid black;
-    width: 30%;
-
+    margin: 20px;
+    border: 1px solid black;
+    text-align: center;
+	vertical-align: middle;
 }
 
-#oddeven :nth-of-type(odd){
-    background-color: black;
+th, td {
+    padding: 8px;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: #03045E;
+    margin-bottom: 16px;
+}
+
+thead {
+    background-color: #2d55aa;
+    color: #ffffff;
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+tbody tr:nth-of-type(even){
+    background-color: #d0dbf3;
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: #fff;
 }
 
 button {
-    background-color: black;
+    border: none;
+    cursor: pointer;
+    background-color: #2d55aa;
     color:white;
+    font-size:16px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
 }
 
-div {
-    width: 40%;
-    float: left;
+button:hover {
+    background: darkblue;
+    color: #ffffff;
 }
 
+.flex-container {
+    display: flex;
+}
+
+.column {
+    margin: 10px;
+}

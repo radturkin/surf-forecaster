@@ -2,76 +2,53 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-
+    	<meta name="description" content="Surf forecaster for Lake Michigan">
 		<title>Surf Forecaster</title>
-
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<header>
+			<h1>Surf Forecaster for Lake Michigan</h1>
+		</header>
+		<main>
+			<div class="flex-container">
+				<div class="column">
+					<table>
+						<caption>Air and Wind Forecast</caption>
+						<thead>
+							<tr>
+								<th>date</th>
+								<th>hour</th>
+								<th>air temp(f)</th>
+								<th>wind speed</th>
+								<th>wind direction</th>
+							</tr>
+						</thead>
+						<tbody id="forecast"></tbody>
+					</table>
+				</div>
+				<div class="column">
+					<h2>NCEP WaveWatch III - Lake Michigan</h2>
+					<p><a href="https://www.glerl.noaa.gov/emf/waves/WW3/" target="_blank">Source</a></p>
+					<button onclick="backward()" type="button">Back</button>
+					<button onclick="forward()" type="button">Forward</button>
+					<p>Click "Back" / "Forward" to advance the frames.</p>
+					<img id="wavefc" src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" height="500" alt="">
 
-		<h1>forecast</h1>
-		<div>
-		<button>get air and wind forecast</button>
-		<table id="tables">
-			<tr>
-				<th>date</th>
-				<th>hour</th>
-				<th>air temp(f)</th>
-				<th>wind speed</th>
-				<th>wind direction</th>
-			</tr>
-			<tbody>
+					<h2>Northwestern University - Evanston, Illinois</h2>
+					<p><a href="https://www.weatherbug.com/weather-camera/?cam=NUEIL" target="_blank">Source</a></p>
+					<img id="gwoods" src="images/vcrcalifornianocontest.jpg" height="400">
 
-			</tbody>
-		</table>
-		</div>
-
-		<div id="altapi">
-			<button id="otherapi">get this other forecast</button>
-			<table id="table2">
-				<tr>
-					<th>date</th>
-					<th>hour</th>
-					<th>air temp(f)</th>
-					<th>wind speed</th>
-					<th>wind direction</th>
-				</tr>
-				<tbody>
-	
-				</tbody>
-			</table>
+					<h2>Evanston Beach Live Stream</h2>
+					<p><a href="https://www.youtube.com/watch?v=_hXxjmIO3IY" target="_blank">Source</a></p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
+					title="YouTube video player" 
+					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen></iframe>
+				</div>
 			</div>
-
-
-		<div id= "glcfs" class="images">
-			<button onclick="backward()" type="button">Back</button>
-			<button onclick="forward()" type="button">Forward</button>
-
-			<img id="wavefc" name="animation" align="left" 
-			src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" 
-			height="530" width="690" alt="">
-		</div>
-		<div class="images">
-			<img id="gwoods" style="display: block;" 
-			src="/images/vcrcalifornianocontest.jpg"
-
-			width="981" height="551">
-		</div>
-		<div class="images">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
-			title="YouTube video player" 
-			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-			allowfullscreen></iframe>
-		</div>
-		
-
-		<script type="text/javascript" src="js/weather.js"></script>
+			
+			<script type="text/javascript" src="js/weather.js"></script>
+		</main>
 	</body>
 </html>
