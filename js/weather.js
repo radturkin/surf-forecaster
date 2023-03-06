@@ -121,18 +121,18 @@ if (pastminutes<0){
     newhour=flexhour
 }
 //create switch case
-if(newminutes>58){
-    newminutes=58
+if(newminutes>59){
+    newminutes=59
     }
 
-else if (newminutes<58 && newminutes > 43){
-    newminutes=43
+else if (newminutes<58 && newminutes > 44){
+    newminutes=44
 }
 
-else if(newminutes<43 && newminutes>28){
-    newminutes=28
+else if(newminutes<44 && newminutes>29){
+    newminutes=2
 }
-else if(newminutes<28 && newminutes >14){
+else if(newminutes<29 && newminutes >14){
     newminutes=14
 }
 
