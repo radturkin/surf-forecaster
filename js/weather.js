@@ -39,47 +39,47 @@ function forecaster(){
 }
 
 //this is for the alternate api
-document.querySelector('.altapi').addEventListener('click', forecastalt)
+// document.querySelector('.altapi').addEventListener('click', forecastalt)
 
-function forecastalt(){
-    let period =""
+// function forecastalt(){
+//     let period =""
 
-    fetch("https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=42.04&lon=87.67&appid={API key}")
-    .then(res => res.json()) // parse response as JSON
-    .then(data => {
-      console.log(data)
-      period=data.properties.periods
-      console.log(period)
-      console.log(data.properties.periods[5])
-      console.log(period[0].startTime)
+//     fetch("https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=42.04&lon=87.67&appid={API key}")
+//     .then(res => res.json()) // parse response as JSON
+//     .then(data => {
+//       console.log(data)
+//       period=data.properties.periods
+//       console.log(period)
+//       console.log(data.properties.periods[5])
+//       console.log(period[0].startTime)
       
 
-   let table=document.getElementById("table2")
+//    let table=document.getElementById("table2")
 
-   for(let i=0;i<120;i++){
-    let day=String(period[i].startTime)
-    //2022-09-14T07:00:00-05:00 parse date time to date time seperate
-    let newday=day.split("T")
-    let daysub=newday[0].substring(5,)
-    let timesub=newday[1].substring(0,2)
-    //fill table with data from api
-    let row=`<tr class="oddeven">
-                <td>${daysub}</td>
-                <td>${timesub}</td>
-                <td>${period[i].temperature}</td>
-                <td>${period[i].windSpeed}</td>
-                <td>${period[i].windDirection}</td>
-            </tr>`
-    table.innerHTML+=row
+//    for(let i=0;i<120;i++){
+//     let day=String(period[i].startTime)
+//     //2022-09-14T07:00:00-05:00 parse date time to date time seperate
+//     let newday=day.split("T")
+//     let daysub=newday[0].substring(5,)
+//     let timesub=newday[1].substring(0,2)
+//     //fill table with data from api
+//     let row=`<tr class="oddeven">
+//                 <td>${daysub}</td>
+//                 <td>${timesub}</td>
+//                 <td>${period[i].temperature}</td>
+//                 <td>${period[i].windSpeed}</td>
+//                 <td>${period[i].windDirection}</td>
+//             </tr>`
+//     table.innerHTML+=row
 
-   }
+//    }
 
-    })
-    .catch(err => {
-        console.log(`error ${err}`)
-    });
+//     })
+//     .catch(err => {
+//         console.log(`error ${err}`)
+//     });
 
-}
+// }
 
 forecaster()
 let clickCount=1
