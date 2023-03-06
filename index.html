@@ -7,44 +7,48 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<h1>Surf Forecaster for Lake Michigan</h1>
-		<div class="row">
-			<div class="column">
-				<table>
-					<caption>Air and Wind Forecast</caption>
-					<thead>
-						<tr>
-							<th>date</th>
-							<th>hour</th>
-							<th>air temp(f)</th>
-							<th>wind speed</th>
-							<th>wind direction</th>
-						</tr>
-					</thead>
-					<tbody id="forecast"></tbody>
-				</table>
-			</div>
-			<div class="column">
-				<h2>NCEP WaveWatch III - Lake Michigan:</h2>
-				<p><a href="https://www.glerl.noaa.gov/emf/waves/WW3/">Source</a></p>
-				<button onclick="backward()" type="button">Back</button>
-				<button onclick="forward()" type="button">Forward</button>
-				<p><em>(Click "Back" / "Forward" to advance the frames.)</em></p>
-				<img id="wavefc" src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" height="530" width="690" alt="">
+		<header>
+			<h1>Surf Forecaster for Lake Michigan</h1>
+		</header>
+		<main>
+			<div class="flex-container">
+				<div class="column">
+					<table>
+						<caption>Air and Wind Forecast</caption>
+						<thead>
+							<tr>
+								<th>date</th>
+								<th>hour</th>
+								<th>air temp(f)</th>
+								<th>wind speed</th>
+								<th>wind direction</th>
+							</tr>
+						</thead>
+						<tbody id="forecast"></tbody>
+					</table>
+				</div>
+				<div class="column">
+					<h2>NCEP WaveWatch III - Lake Michigan</h2>
+					<p><a href="https://www.glerl.noaa.gov/emf/waves/WW3/" target="_blank">Source</a></p>
+					<button onclick="backward()" type="button">Back</button>
+					<button onclick="forward()" type="button">Forward</button>
+					<p>Click "Back" / "Forward" to advance the frames.</p>
+					<img id="wavefc" src="https://www.glerl.noaa.gov/emf/waves/WW3/images//ww3glm-1.png?1663254398596" height="500" alt="">
 
-				<h2>Northwestern University - Evanston, Illinois:</h2>
-				<p><a href="https://www.weatherbug.com/weather-camera/?cam=NUEIL">Source</a></p>
-				<img id="gwoods" src="images/vcrcalifornianocontest.jpg" height="400">
+					<h2>Northwestern University - Evanston, Illinois</h2>
+					<p><a href="https://www.weatherbug.com/weather-camera/?cam=NUEIL" target="_blank">Source</a></p>
+					<img id="gwoods" src="images/vcrcalifornianocontest.jpg" height="400">
 
-				<h2>Evanston Beach Live Stream:</h2>
-				<p><a href="https://www.youtube.com/watch?v=_hXxjmIO3IY">Source</a></p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
-				title="YouTube video player" 
-				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-				allowfullscreen></iframe>
+					<h2>Evanston Beach Live Stream</h2>
+					<p><a href="https://www.youtube.com/watch?v=_hXxjmIO3IY" target="_blank">Source</a></p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/_hXxjmIO3IY"
+					title="YouTube video player" 
+					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen></iframe>
+				</div>
 			</div>
-		</div>
-		
-		<script type="text/javascript" src="js/weather.js"></script>
+			
+			<script type="text/javascript" src="js/weather.js"></script>
+		</main>
 	</body>
 </html>
